@@ -1,0 +1,129 @@
+
+/* 
+    Created on : 12.12.2017, 12:00:22
+    Author     : sergey
+*/
+
+* {box-sizing: border-box;}
+
+.header1 {
+    margin: 0;
+    text-align: center;
+    height: 120px;
+    background: linear-gradient(to bottom, #fefcea, #f1da36);
+
+}
+
+
+.footer1 {
+    margin: 0;
+    text-align: center;
+    height: 120px;
+    bottom: 0px; /* Расстояние от нижнего края окна браузера */
+    position: static;  /*Абсолютное позиционирование */
+    /*border: solid 1px black;  Параметры рамки */
+    background: linear-gradient(to top, #fefcea, #f1da36);
+
+}
+
+.main1 {
+    margin: 0;
+    /*text-align: center;*/
+    height: 320px;
+    background-color: #f1da36;
+    color:#000;
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 99%;  /*Ширина блока */
+    height: 350px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 1px black; /* Параметры рамки */
+}
+body {
+    margin: 0;
+    font-family: Verdana;
+    text-shadow: 1px 1px 2px black, 0 0 1em red; 
+    background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
+    background-size: 10px 10px;
+}
+
+a {
+    font-size: 10pt;
+}
+
+a:hover {
+    color:green;
+    text-shadow: 1px 1px 2px black, 0 0 1em red; 
+}
+.radius {
+    background:#F1DA36; /* Цвет фона */
+    border: 0px solid ; /* Параметры рамки */
+    padding: 15px; /* Поля вокруг текста */
+    margin-bottom: 10px; /* Отступ снизу */
+    box-shadow: 5px 6px 5px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+.topmenu {
+    backface-visibility: hidden;
+    background: rgba(255,255,255,.8);
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+.topmenu > li > a {
+    font-family: Verdana;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #003559;
+    text-transform: uppercase;
+}
+.down:after {
+    content: "\25BC";
+    margin-left: 8px;
+    font-family: Verdana;
+}
+
+.topmenu li a:hover { color: white; }/*#E6855F*/
+
+.submenu {
+
+    background: #FDFAE4;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    /*width: 300px;*/
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+}
+
+.topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+    color: blueviolet;
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-family: Verdana;
+    /*text-shadow:none;*/
+}

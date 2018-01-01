@@ -1,0 +1,13 @@
+{
+    "name": "vendor/krughok",
+    "description": "Описание проекта Krughok.",
+    "authors": [
+        {
+            "name": "Sergey Maximov",
+            "email": "maximov3@yandex.ru"
+        }
+    ],
+    "require": {
+    
+    }
+}
