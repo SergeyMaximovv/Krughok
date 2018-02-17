@@ -39,7 +39,9 @@
                     <li><a href="?page=constr_modeled">Конструирование, моделирование и технология швейных изделий</a></li>
                 </ul>
             </li>
-            <li><a href="#">Родители</a></li>
+            <li><a href="#">Родители</a>
+            
+            </li>
 
             <li><a href="" class="down">О проекте</a>
                 <ul class="submenu">

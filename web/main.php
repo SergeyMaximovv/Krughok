@@ -3,12 +3,12 @@
 //<h1 style='margin: 0;'>Главная</h1>
 $themerefferens = [
     'differnts', //ТРУДОЕМКОСТЬ  
-    'news',     //НОВОСТИ
+    'news', //НОВОСТИ
     'project', //
-    'components', 
+    'components',
     'differents',
-    'targets', 
-    'project_IS', 
+    'targets',
+    'project_IS',
     'FM_IS',
     're',
     'index'];
@@ -24,6 +24,6 @@ if (isset($_GET['page'])) {
 
         include '../pages/news.php';
     }
-   // include '../pages/news.php';
+    // include '../pages/news.php';
 }
 echo '</section>';
