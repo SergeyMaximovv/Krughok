@@ -7,7 +7,7 @@ ErrorDocument 400 /
 ErrorDocument 401 /
 ErrorDocument 402 /
 ErrorDocument 403 /
-ErrorDocument 404 /
+ErrorDocument 404 /404.php
 ErrorDocument 500 /
 
 
@@ -16,4 +16,4 @@ RewriteCond %{REQUEST_FILENAME} |-d
 RewriteCond %{REQUEST_FILENAME} |-f
 
 
-RewriteRule ^(.*)$ index.php [L,QSA]
+#RewriteRule ^(.*)$ index.php [L,QSA]

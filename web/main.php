@@ -12,17 +12,19 @@ $themerefferens = [
     'FM_IS',
     're',
     'index'];
-echo '<section class="main1">';
 
+echo '<section class="main1">';
 
 if (isset($_GET['page'])) {
 
     if (in_array($_GET['page'], $themerefferens)) {
 
-        include '../pages/' . $_GET['page'] . '.php';
+        echo ($_GET['page']);
+        include '../app/views/pages/' . $_GET['page'] . '.php';
+        
     } else {
 
-        include '../pages/news.php';
+        include '../app/views/pages/news.php';
     }
     // include '../pages/news.php';
 }
