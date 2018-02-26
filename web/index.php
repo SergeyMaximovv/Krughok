@@ -28,9 +28,10 @@
         $router = new \krughok\core\Router();
 //
         require '../app/views/header.php';
-//
-        $router->start();
+        
         require 'main.php';
+        
+        $router->start();       
     
         require '../app/views/footer.php';
         ?>

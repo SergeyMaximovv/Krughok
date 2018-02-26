@@ -4,13 +4,15 @@
     Author     : sergey
 */
 
-* {box-sizing: border-box;}
-
+/** {box-sizing: border-box;}*/
+h3 {
+    margin: 0;
+}
 .header1 {
     margin: 0;
     text-align: center;
-    height: 120px;
-    background: linear-gradient(to bottom, #fefcea, #f1da36);
+    height: 32px;
+    background: linear-gradient(to bottom, #fff, #777);
 
 }
 
@@ -21,7 +23,7 @@
     bottom: 0px; /* Расстояние от нижнего края окна браузера */
     position: static;  /*Абсолютное позиционирование */
     /*border: solid 1px black;  Параметры рамки */
-    background: linear-gradient(to top, #fefcea, #f1da36);
+    background: linear-gradient(to top, #fff, #777);
 
 }
 
@@ -29,7 +31,7 @@
     margin: 0;
     /*text-align: center;*/
     height: 320px;
-    background-color: #f1da36;
+    background-color: #777;
     color:#000;
     overflow: scroll; /* Добавляем полосы прокрутки */
     width: 99%;  /*Ширина блока */
@@ -40,7 +42,7 @@
 body {
     margin: 0;
     font-family: Verdana;
-    text-shadow: 1px 1px 2px black, 0 0 1em red; 
+    text-shadow: 1px 1px 1px black, 0 0 1em #777; 
     background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
     background-size: 10px 10px;
 }
@@ -54,7 +56,7 @@ a:hover {
     text-shadow: 1px 1px 2px black, 0 0 1em red; 
 }
 .radius {
-    background:#F1DA36; /* Цвет фона */
+    background:#777; /* Цвет фона */
     border: 0px solid ; /* Параметры рамки */
     padding: 15px; /* Поля вокруг текста */
     margin-bottom: 10px; /* Отступ снизу */
@@ -125,4 +127,12 @@ nav a {
     padding: 0 5px;
     font-family: Verdana;
     /*text-shadow:none;*/
+}
+.logo {
+    float:left;
+    margin-top: 0px;
+    margin-left: 10px;}
+.menu {
+    
+    float: right;
 }

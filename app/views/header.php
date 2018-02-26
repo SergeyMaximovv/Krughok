@@ -10,8 +10,10 @@
      * Это верхняя часть страницы
      */
     ?> 
-    <h1 style="color: white">Информационная система 'Кружок'</h1>
-
+    <div class="logo" >
+    <h3 style="color: white">Информационная система Кружок</h3>
+    </div>
+    <div class="menu">
     <nav>
         <ul class="topmenu">
             <li><a href="#" class="down">Студенты</a>
@@ -56,5 +58,5 @@
             </li>
         </ul>
     </nav>
-
+    </div>
 </header>
